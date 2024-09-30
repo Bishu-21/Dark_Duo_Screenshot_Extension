@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Dark Duo Full Page Screenshot Service",
+  "version": "1.0",
+  "description": "Capture a screenshot of the full webpage with a single click.",
+  "permissions": ["activeTab", "storage", "scripting", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}

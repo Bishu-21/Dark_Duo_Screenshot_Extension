@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Duo Screenshot Service</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a; /* Black background */
+            color: #00ff66; /* Green text */
+            text-align: center;
+        }
+
+        h3 {
+            margin-top: 0;
+            font-size: 22px;
+            color: #00ff66;
+        }
+
+        p {
+            font-size: 14px;
+            margin: 5px 0;
+            color: #00ff66;
+        }
+
+        /* Highlighted Names */
+        .highlight {
+            font-weight: bold;
+            color: #ffd700; /* Gold color for highlighting */
+        }
+
+        /* Button Styles */
+        .button {
+            display: inline-block;
+            background-color: #00ff66; /* Green button background */
+            color: black; /* Black text color */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            position: relative;
+            overflow: hidden;
+            transition: background 0.3s ease;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #00cc52; /* Darker green on hover */
+        }
+
+        /* Shiny Effect for Buttons */
+        .button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            height: 100%;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.6); /* Shine effect */
+            transition: all 0.5s ease;
+            transform: skewX(-30deg);
+        }
+
+        .button:hover::before {
+            left: 100%; /* Move the shine effect */
+        }
+
+        /* Click Effect for Buttons */
+        .button:active {
+            transform: scale(0.95); /* Slight shrink on click */
+        }
+    </style>
+</head>
+<body>
+    <h3>Dark Duo Full Page Screenshot Service</h3>
+    <p>Team: Dark Duo</p>
+    <p>Created by: <span class="highlight">Bishal Sarkar</span></p>
+    <p>Modified with ideas by: <span class="highlight">Koushik Sarkar</span></p>
+    <button id="captureBtn" class="button">Capture Full Page</button>
+    <script src="popup.js"></script>
+</body>
+</html>
