@@ -4,7 +4,7 @@
 ## How to Download and Install
 
 1. **Download the Extension**:
-   - Visit the [Releases](https://github.com/yourusername/Dark_Duo_Screenshot_Extension/releases) page and download the latest release `.zip` file.
+   - Visit the [Releases](https://github.com/Bishu-21/Dark_Duo_Screenshot_Extension/releases) page and download the latest release `.zip` file.
 
 2. **Install the Extension**:
    - Open Chrome and go to `chrome://extensions/`.
